@@ -1,0 +1,20 @@
+.ticket {
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.business-card{
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
