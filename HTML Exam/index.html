@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exercise</title>
+    <link rel="stylesheet" href="static/src/css/style.css">
+</head>
+<body>
+<div class="card">
+    <!-- img -->
+    <div class="margin">
+        <img src="image.jpg" alt="Incorrect Image Path">
+    </div><hr style="width: 100%;">
+
+    <!-- google link -->
+    <div class="margin">
+        <h4><mark>Click Here</mark></h4>
+        <a href="https://www.google.com/" target="_blank" style="text-decoration: none; color: black;">Google</a>
+    </div><hr style="width: 100%;">
+
+    <!-- abbriviation -->
+    <div class="margin">
+        <h4><mark>Hover on text</mark></h4> 
+        <p class="hover_text">Lorem ipsum dolor sit</p>
+    </div><hr style="width: 100%;">
+
+    <!-- Poem -->
+    <div class="margin">
+        <pre>
+My Bonnie lies over the ocean.
+My Bonnie lies over the sea.
+My Bonnie lies over the ocean.
+Oh, bring back my Bonnie to me.
+        </pre>
+    </div><hr style="width: 100%;">
+
+    <!-- formatting -->
+    <div class="margin">
+        <div>
+            <b>Lorem Ipsum</b>
+        </div>
+        <div>
+            <i>Lorem Ipsum</i>
+        </div>
+        <div>H<sub>2</sub>O</div>
+        <div>20<sup>th</sup></div>
+        <samll>I am little.</samll>
+        <div>
+            I am <mark>highlighted</mark> text.
+        </div>
+        <div>
+            My favorite color is <del>Blue</del> Black.
+        </div>
+    </div><hr style="width: 100%;">
+
+    <!-- abbriviation -->
+    <div class="margin">
+        <h4><mark>Hover on text</mark></h4>
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+    </div><hr style="width: 100%;">
+
+    <!-- table -->
+    <div class="margin table_flex">
+        <table class="table1">
+            <tr>
+                <td rowspan="3">APRIL</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table class="table1">
+            <tr>
+                <td colspan="3">2022</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">FIESTA</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div><hr style="width: 100%;">
+
+    <!-- list -->
+    <div class="margin margin_left">
+        <h4 class="margin_font">List</h4>
+        <ol>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ol>
+    </div><hr style="width: 100%;">
+
+    <!-- form -->
+    <div class="margin">
+        <p class="margin_font_1">
+            <strong>NOTE:</strong> First Name field should Required.
+        </p>
+        <form class="form_margin">
+            <label for="fname">First Name:</label>
+            <input class="margin_font" type="text" id="fname" name="fname" required><br>
+
+            <label for="lname">Last Name:</label>
+            <input class="margin_font" type="text" id="lname" name="lname" required><br>
+
+            <p class="margin_font_1">
+                <strong>NOTE:</strong> First Option of radio is can't choosable.
+            </p>
+            <p>Choose your favorite Web language:</p>
+
+            <input type="radio" id="html" name="language" value="HTML" disabled>
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="language" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="JavaScript" name="language" value="JAVASCRIPT">
+            <label for="JavaScript">JAVASCRIPT</label><br>
+
+            <label class="margin_font" for="car">Choose a car:</label>
+            <select class="margin_font_1 margin_font" id="car" name="car" size="4">
+                <option value="volvo">Volvo</option>
+                <option value="Maruti">Maruti</option>
+                <option value="Honda">Honda</option>
+                <option value="Hundai">Hundai</option>
+                <option value="Nexa">Nexa</option>
+                <option value="Thar">Thar</option>
+                <option value="Jeep">Jeep</option>
+            </select>
+            <div class="margin_font">
+                <textarea id="change" name="change" rows="4" cols="50" placeholder="Write here..."></textarea>
+            </div>
+            <label class="margin_font" for="media">Select a file:</label>
+            <input class="margin_font" type="file" id="media" name="media"><br>
+
+            <label for="color">Select your favorite color: </label>
+            <input class="margin_font" type="color" id="color" name="color" value="#ff0000"><br>
+
+            <p class="margin_font_1">
+                <strong>NOTE:</strong> Quantity field should not allow to enter more than 50 and less than 0.
+            </p>
+
+            <label for="Quantity">Quantity</label>
+            <input class="margin_font" type="number" id="Quantity" name="Quantity"><br>
+
+            <label for="dob">Birthday:</label>
+            <input class="margin_font" type="date" id="dob" name="dob"><br>
+
+        </form>
+    </div><hr style="width: 100%;">
+
+    <h2 class="margin_font_1 margin_left">
+        Video
+    </h2>
+    <iframe class="margin_left margin_font" width="560" height="315" src="https://www.youtube.com/embed/StpmjWTTG0A?si=FyP86kPZvfISJdsJ?autoplay=1&mute=1" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</div>
+</body>
+</html>
