@@ -28,11 +28,11 @@ p{
     margin-bottom: 0;
 }
 .margin{
-    min-height: 160px;
+    min-height: 100px;
 }
 
 .margin_star{
-    min-height: 160px;
+    min-height: 100px;
 }
 .stars {
     color: gold;
@@ -54,10 +54,10 @@ p{
 @media (min-width: 1024px) and (max-width: 1440px) {
 
     .margin{
-        min-height: 200px;
+        min-height: 100px;
     }
     
     .margin_star{
-        min-height: 200px;
+        min-height: 100px;
     }
 }
