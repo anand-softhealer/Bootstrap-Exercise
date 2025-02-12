@@ -1,13 +1,4 @@
-.product-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 15px;
-    background: #fff;
-    position: relative;
-}
-.product-card .sale-badge {
+.sale-badge {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -17,42 +8,33 @@
     font-size: 12px;
     border-radius: 3px;
 }
-.product-card h6{
+h6{
     margin-top: 1.5rem;
     margin-bottom: 0;
 }
-.product-card img {
-    width: 100%;
-    height: auto;
-}
-.product-card .price {
+.price {
     margin-top:0;
     margin-bottom: 0;
     font-weight: bold;
     font-size: 12px;
 }
-.product-card .old-price {
+.old-price {
     text-decoration: line-through;
     color: gray;
     font-size: 12px;
 }
-.product-card p{
+p{
     margin-top: 0;
     margin-bottom: 0;
 }
-.btn2{
-    margin-top: 2.5rem;
+.margin{
+    min-height: 160px;
 }
-.btn1{
-    margin-top: 0.65rem;
+
+.margin_star{
+    min-height: 160px;
 }
-.btn3{
-    margin-top: 2.15rem;
-}
-.btn4{
-    margin-top: 1.05rem;
-}
-.product-card .stars {
+.stars {
     color: gold;
     margin-top: 0;
     margin-bottom: 0;
@@ -63,4 +45,19 @@
 }
 .class1{
     margin-top: 1rem;
+}
+
+.card{
+    font-size: 15px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .margin{
+        min-height: 200px;
+    }
+    
+    .margin_star{
+        min-height: 200px;
+    }
 }
