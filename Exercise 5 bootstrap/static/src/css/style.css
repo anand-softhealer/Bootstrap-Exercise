@@ -1,0 +1,576 @@
+
+.main_container{
+    position: relative;
+}
+.sub_1{
+    position: relative;
+    z-index: 2;
+}
+.main_container::after{
+    /* content: url('/static/src/image/lab.jpg'); */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 40%, rgba(255,255,255,0.8) 100%);
+}
+
+.hero_section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero_section h1 {
+    font-size: 2.8rem;
+}
+
+.hero_section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero_section .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.header_align{
+    position: relative;
+}
+
+.header_img{
+    position: relative;
+}
+
+.header_content_img{
+    position: absolute;
+    top: -78%;
+    right: 0;
+    z-index: 1;
+    height: 211%;
+}
+
+.header_img::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    border-radius: 0.25rem;
+    top: -78%;
+    left: 0;
+    width: 100%;
+    height: 211%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* animation of card------------------------------------------------ */
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        background-color: green;
+        color: #313131;
+    }
+    100%{
+        opacity: 1;
+        background-color: green;
+    }
+}
+    
+.body1{
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes hoverEffect {
+    0%{
+        background-color: #008000;
+        border-color: #008000;
+        opacity: 0;
+    }
+    25%{
+        background-color: #008000;
+        border-color: #008000;
+    }
+    100%{
+        background-color: #008000;
+        border-color: #008000;
+        opacity: 1;
+    }
+}
+.body:hover{
+    animation: hoverEffect 1s ease-in-out infinite;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+.btn-read-more {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cont{
+    background-image: url('/static/src/image/bg1.jpg') !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-y: center;
+    top: 345%;
+    width: 70%;
+    left: 15%;
+}
+.card-title{
+    font-size: 15px;
+}
+
+.card-text{
+    font-size: 15px;
+}
+
+.text{
+    position: relative;
+    z-index: 1;
+}
+
+.cont::after{
+    border-radius: 0.25rem;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content1{
+    background-image: url('/static/src/image/bg.jpg') !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-y: center;
+    width: 87%;
+    height: 50%;
+}
+
+.services{
+    position: relative;
+    z-index: 1;
+}
+
+.service_content{
+    position: relative;
+    z-index: 1;
+}
+
+.services::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.content1::after{
+    content: "";
+    position: absolute;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.experience_bg{
+    background-image: url('/static/src/image/service2.jpg');
+    background-repeat: no-repeat;
+    border-radius: 0.25rem;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position-y: center;
+    overflow: hidden;
+}
+
+.experience_bg::after{
+    content: "";
+    position: absolute;
+    border-radius: 0.25rem;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 28%, rgba(255,255,255,1) 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.experience_img{
+    z-index: 1;
+    position: relative;
+}
+
+.experience_text{
+    z-index: 1;
+    position: relative;
+}
+
+.line{
+    height: 3px;
+    border: none;
+    background: linear-gradient(90deg, #d53509, #fff, #d53509);
+    background-size:40% 100%;
+    animation: flowGradient 5s linear infinite;
+}
+
+@keyframes flowGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.card img{
+    width: 100% ;
+    height: auto;
+}
+
+.sale-badge{
+    position: absolute;
+    background: #d53509;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.bg{
+    background-image: url('/static/src/image/map.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+    height: auto;
+}
+
+.bg::after{
+    content: "";
+    position: absolute;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dis{
+    z-index: 1;
+    position: relative;
+}
+
+@media (min-width:320px) and (max-width: 374px) {
+    .content1{
+        background-image: url('/static/src/image/bg.jpg') !important;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        background-size: cover;
+        background-position-y: center;
+        width: 72%;
+        height: 45%;
+    }
+
+    .content1 h1{
+        font-size: 15px;
+    }
+
+    .content1 a{
+        width: 20%;
+        height: 15%;
+        font-size: 10px;
+    }
+
+    .cont{
+    background-image: url(/static/src/image/bg1.jpg) !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-y: center;
+    top: 1000%;
+    width: 70%;
+    height: 58%;
+    left: 15%;
+    }
+
+    .cont::after{
+        border-radius: 0.25rem;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .cont h2{
+        font-size: 15px;
+    }
+
+    .cont div{
+        font-size: 15px;
+    }
+    
+    .youtube_font h2{
+        font-size: 20px;
+    }
+    .youtube_font p{
+        font-size: 10px;
+    }
+
+    .employee-cart h1{
+        font-size: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-left: 25px;
+    }
+    .sale-badge{
+    position: absolute;
+    top: 10px;
+    left: 1rem !important;
+    background: #d53509;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    width: 47%;
+    }
+    .conti_btn{
+        font-size: 10px;
+    }
+
+    .footer{
+        width: 50%;
+        margin-left: 45px;
+    }
+    .footer_text > p{
+        font-size: 10px;
+    }
+    .footer_text_li{
+        font-size: 10px !important;
+    }
+}
+
+@media (min-width:375px) and (max-width: 424px) {
+    .content1{
+        background-image: url('/static/src/image/bg.jpg') !important;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        background-size: cover;
+        background-position-y: center;
+        width: 72%;
+        height: 45%;
+    }
+
+    .content1 h1{
+        font-size: 15px;
+    }
+
+    .content1 a{
+        width: 20%;
+        height: 15%;
+        font-size: 10px;
+    }
+
+    .cont{
+    background-image: url(/static/src/image/bg1.jpg) !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-y: center;
+    top: 940%;
+    width: 70%;
+    height: 58%;
+    left: 13%;
+    }
+
+    .cont::after{
+        border-radius: 0.25rem;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .cont h2{
+        font-size: 15px;
+    }
+
+    .cont div{
+        font-size: 15px;
+    }
+
+    .youtube_font p{
+        font-size: 10px;
+    }
+    .employee-cart h1{
+        font-size: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-left: 25px;
+    }
+    .sale-badge{
+    position: absolute;
+    top: 10px;
+    left: 1rem !important;
+    background: #d53509;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    width: 47%;
+    }
+    .conti_btn{
+        font-size: 10px;
+    }
+
+    .footer{
+        width: 50%;
+        margin-left: 45px;
+    }
+    .footer_text > p{
+        font-size: 10px;
+    }
+    .footer_text_li{
+        font-size: 10px !important;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .content1{
+        background-image: url('/static/src/image/bg.jpg') !important;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        background-size: cover;
+        background-position-y: center;
+        width: 72%;
+        height: 45%;
+    }
+
+    .content1 h1{
+        font-size: 15px;
+    }
+
+    .content1 a{
+        width: 20%;
+        height: 15%;
+        font-size: 10px;
+    }
+
+    .cont{
+    background-image: url(/static/src/image/bg1.jpg) !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-y: center;
+    top: 960%;
+    width: 70%;
+    height: 58%;
+    left: 11.5%;
+    }
+
+    .cont::after{
+        border-radius: 0.25rem;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .cont h2{
+        font-size: 15px;
+    }
+
+    .cont div{
+        font-size: 15px;
+    }
+
+    .youtube_font h2{
+        font-size: 20px;
+    }
+    .youtube_font p{
+        font-size: 10px;
+    }
+    .employee-cart h1{
+        font-size: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-left: 25px;
+    }
+    .sale-badge{
+    position: absolute;
+    top: 10px;
+    left: 1rem !important;
+    background: #d53509;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    width: 47%;
+    }
+    .conti_btn{
+        font-size: 10px;
+    }
+
+    .footer{
+        width: 50%;
+        margin-left: 45px;
+    }
+    .footer_text > p{
+        font-size: 10px;
+    }
+    .footer_text_li{
+        font-size: 10px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .card_end{
+        min-height: 282px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    .body_text_margin{
+        min-height: 111px;
+    }
+}
