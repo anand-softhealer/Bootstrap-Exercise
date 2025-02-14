@@ -87,13 +87,14 @@
         <div class="row align-item-center">
           <div class="row header_align">
             <div class="col-lg-6 my-3">
-              <h1>Reliable & High Quality Laboratory</h1>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut per spiciatis unde omnis natus error.</p>
+              <h1 id="carousel-title">Reliable & High Quality Laboratory</h1>
+              <p id="carousel-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut per spiciatis unde omnis natus error.</p>
               <a href="#" class="btn btn-success">Contact Us</a>
             </div>
             <div class="col-lg-6 header_img">
               <img src="static/src/image/lab.jpg" class="img-fluid header_content_img mb-4 rounded" alt="lab">
             </div>
+            <span class="fa fa-chevron-left d-flex"><span class="fa fa-chevron-right d-flex"></span></span>
           </div>
         </div>
       </div>
@@ -209,7 +210,7 @@
           <h2 class="fw-bold">Our Services</h2>
           <p class="text-danger">Work Area</p>
       </div>
-      <nav class="nav navbar-expand-sm justify-content-center bg-light">
+      <nav class="nav navbar-expand-sm justify-content-center bg-light rounded">
         <ul class="navbar-nav nav-pills" role="tablist">
           <li class="navbar-list">
             <a class="nav-link active mr-3" data-bs-toggle="tab" href="#chronic">Chrinic Disease</a>
@@ -418,7 +419,7 @@
         <div class="row component_list_view d-flex justify-content-center align-item-center">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="row component_list">
-              <h3 class="text-white d-flex justify-content-center"> Immunology: T-cell tweaks to target tumours</h3>
+              <h3 class="text-white d-flex justify-content-center active"> Immunology: T-cell tweaks to target tumours</h3>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#component_item">
                 <span class="fa fa-bars text-white"></span>
               </button>
@@ -455,7 +456,7 @@
     <div class="container">
       <div class="row my-5">
         <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
-          <iframe class="rounded youtube"src="https://www.youtube.com/embed/xJx40uePLPk?si=qBilhSv5XJtiGqSK?autoplay=1&mute=1"></iframe>
+              <iframe class="rounded youtube"src="https://www.youtube.com/embed/xJx40uePLPk?si=qBilhSv5XJtiGqSK?autoplay=1&mute=1"></iframe>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
           <h2 class="fw-bold mt-3">Reliable & High Quality Laboratory</h2>
@@ -489,10 +490,11 @@
     </div>
   </section>
 
+  <!-- employee section -->
   <section class="employee-cart container mb-5">
     <h1 class="align-item-center justify-content-center d-flex">Aculia Journal</h1>
     <p class="justify-content-center align-item-center d-flex" style="color: #d53509;">Latest News</p>
-    <hr class="line d-flex mx-auto justify-content-center" style="width: 10%;">
+    <hr class="line d-flex mx-auto justify-content-center" style="width: 15%;">
    <div class="row">
     <div class="col-sm-12 col-md-4 col-lg-4 my-3">
       <div class="card">
@@ -535,6 +537,9 @@
     </div>
     </div> 
   </section>
+
+  
+  <!-- footerr section -->
 
   <footer class="footer bg rounded" id="contact">
     <div class="container dis">
@@ -592,52 +597,11 @@
             <small>ACULIA © 2020 All Rights Reserved</small>
         </div>
     </div>
-</footer>
-
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  
-  <!-- Indicators/Dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
-  </div>
-
-  <!-- Carousel Inner -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="static/src/image/lab.jpg" class="d-block w-100" alt="Slide 1">
-    </div>
-    <div class="carousel-item">
-      <img src="static/src/image/service1.jpg" class="d-block w-100" alt="Slide 2">
-    </div>
-    <div class="carousel-item">
-      <img src="static/src/image/service2.jpg" class="d-block w-100" alt="Slide 3">
-    </div>
-    <div class="carousel-item">
-      <img src="static/src/image/service1.jpg" class="d-block w-100" alt="Slide 4">
-    </div>
-    <div class="carousel-item">
-      <img src="static/src/image/service2.jpg" class="d-block w-100" alt="Slide 5">
-    </div>
-  </div>
-
-  <!-- Navigation Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
-</div>
+  </footer>
 
   </div>
 </div>
+
 <script src="/static/src/js/jquery.min.js"></script>
 <script src="/static/src/js/owl.carousel.js"></script>
 <script src="/static/src/js/owl.carousel.min.js"></script>

@@ -297,7 +297,8 @@
 }
 
 .line{
-    height: 3px;
+    height: 5px;
+    border-radius: 1rem;
     border: none;
     background: linear-gradient(90deg, #d53509, #fff, #d53509);
     background-size:40% 100%;
