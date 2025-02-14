@@ -7,7 +7,6 @@
     z-index: 2;
 }
 .main_container::after{
-    /* content: url('/static/src/image/lab.jpg'); */
     content: "";
     position: absolute;
     top: 0;
@@ -18,7 +17,6 @@
 }
 
 .hero_section {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
     padding: 100px 0;
     position: relative;
     z-index: 1;
@@ -135,6 +133,8 @@
 }
 .card_container{
     background-image: url("/static/src/image/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0.25rem;
     position: relative;
 }
@@ -158,6 +158,50 @@
     font-size: 15px;
 }
 
+.component_bg{
+    position: relative;
+    border-radius: 0.25rem;
+}
+
+.component_bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+.component_content{
+    position: relative;
+    z-index: 1;
+}
+
+.component_list_view{
+    position: relative;
+    padding: 10px;
+}
+
+.component_list_view::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    border-radius: 0.25rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.component_list{
+    position: relative;
+    z-index: 1;
+}
+.component_list span{
+    position: relative;
+    z-index: 5;
+}
 .text{
     position: relative;
     z-index: 1;
@@ -236,11 +280,17 @@
     width: 100%;
     height: 100%;
 }
-.experience_img{
+.quote{
+    color: #d53509;
+    font-size: 50px !important;
     z-index: 1;
     position: relative;
 }
 
+.experience_img{
+    position: relative;
+    z-index: 1;
+}
 .experience_text{
     z-index: 1;
     position: relative;
@@ -305,6 +355,20 @@
 }
 
 @media (min-width:320px) and (max-width: 374px) {
+    .hero_section{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .header_content_img{
+        position: unset;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .header_img::after{
+        position: unset;
+    }
+
     .content1{
         background-image: url('/static/src/image/bg.jpg') !important;
         background-repeat: no-repeat;
@@ -327,16 +391,16 @@
     }
 
     .cont{
-    background-image: url(/static/src/image/bg1.jpg) !important;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: absolute;
-    background-size: cover;
-    background-position-y: center;
-    top: 1000%;
-    width: 70%;
-    height: 58%;
-    left: 15%;
+        background-image: url(/static/src/image/bg1.jpg) !important;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        background-size: cover;
+        background-position-y: center;
+        top: 1000%;
+        width: 70%;
+        height: 58%;
+        left: 15%;
     }
 
     .cont::after{
@@ -357,12 +421,13 @@
     .cont div{
         font-size: 15px;
     }
-    
-    .youtube_font h2{
-        font-size: 20px;
+
+    .component_list_view::after{
+        left: 25px;
     }
-    .youtube_font p{
-        font-size: 10px;
+
+    .component_list{
+        text-align: center;
     }
 
     .employee-cart h1{
@@ -373,15 +438,15 @@
         margin-left: 25px;
     }
     .sale-badge{
-    position: absolute;
-    top: 10px;
-    left: 1rem !important;
-    background: #d53509;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 3px;
-    width: 47%;
+        position: absolute;
+        top: 10px;
+        left: 1rem !important;
+        background: #d53509;
+        color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 3px;
+        width: 47%;
     }
     .conti_btn{
         font-size: 10px;
@@ -400,6 +465,20 @@
 }
 
 @media (min-width:375px) and (max-width: 424px) {
+    .hero_section{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .header_content_img{
+        position: unset;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .header_img::after{
+        position: unset;
+    }
+    
     .content1{
         background-image: url('/static/src/image/bg.jpg') !important;
         background-repeat: no-repeat;
@@ -422,16 +501,16 @@
     }
 
     .cont{
-    background-image: url(/static/src/image/bg1.jpg) !important;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: absolute;
-    background-size: cover;
-    background-position-y: center;
-    top: 940%;
-    width: 70%;
-    height: 58%;
-    left: 13%;
+        background-image: url(/static/src/image/bg1.jpg) !important;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        background-size: cover;
+        background-position-y: center;
+        top: 940%;
+        width: 70%;
+        height: 58%;
+        left: 13%;
     }
 
     .cont::after{
@@ -453,8 +532,12 @@
         font-size: 15px;
     }
 
-    .youtube_font p{
-        font-size: 10px;
+    .component_list_view::after{
+        left: 30px;
+    }
+
+    .component_list{
+        text-align: center;
     }
     .employee-cart h1{
         font-size: 20px;
@@ -464,15 +547,15 @@
         margin-left: 25px;
     }
     .sale-badge{
-    position: absolute;
-    top: 10px;
-    left: 1rem !important;
-    background: #d53509;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 3px;
-    width: 47%;
+        position: absolute;
+        top: 10px;
+        left: 1rem !important;
+        background: #d53509;
+        color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 3px;
+        width: 47%;
     }
     .conti_btn{
         font-size: 10px;
@@ -491,6 +574,20 @@
 }
 
 @media (min-width: 425px) and (max-width: 767px){
+    .hero_section{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .header_content_img{
+        position: unset;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .header_img::after{
+        position: unset;
+    }
+    
     .content1{
         background-image: url('/static/src/image/bg.jpg') !important;
         background-repeat: no-repeat;
@@ -513,16 +610,16 @@
     }
 
     .cont{
-    background-image: url(/static/src/image/bg1.jpg) !important;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: absolute;
-    background-size: cover;
-    background-position-y: center;
-    top: 960%;
-    width: 70%;
-    height: 58%;
-    left: 11.5%;
+        background-image: url(/static/src/image/bg1.jpg) !important;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        background-size: cover;
+        background-position-y: center;
+        top: 960%;
+        width: 70%;
+        height: 58%;
+        left: 11.5%;
     }
 
     .cont::after{
@@ -543,12 +640,12 @@
     .cont div{
         font-size: 15px;
     }
-
-    .youtube_font h2{
-        font-size: 20px;
+    .component_list_view::after{
+        left: 30px;
     }
-    .youtube_font p{
-        font-size: 10px;
+
+    .component_list{
+        text-align: center;
     }
     .employee-cart h1{
         font-size: 20px;
@@ -558,15 +655,15 @@
         margin-left: 25px;
     }
     .sale-badge{
-    position: absolute;
-    top: 10px;
-    left: 1rem !important;
-    background: #d53509;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 3px;
-    width: 47%;
+        position: absolute;
+        top: 10px;
+        left: 1rem !important;
+        background: #d53509;
+        color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 3px;
+        width: 47%;
     }
     .conti_btn{
         font-size: 10px;
@@ -585,13 +682,66 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-    .card_end{
-        min-height: 282px;
+    .hero_section{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .body_text_margin{
+        min-height: 89px;
+    }
+    .header_content_img{
+        position: unset;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .header_img::after{
+        position: unset;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px){
-    .body_text_margin{
-        min-height: 111px;
-    }
+
+
+/* section_card animation */
+
+.section_card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: linear-gradient(145deg, #d8d1d1, #ffffff);
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Hover Effect */
+.section_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Shine Effect */
+.section_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+    transform: skewX(-20deg);
+    transition: left 0.7s ease-in-out;
+}
+
+.section_card:hover::before {
+    left: 100%;
+}
+
+/* Icon Styling */
+.section_card i svg {
+    transition: transform 0.3s ease;
+}
+
+.section_card:hover i svg {
+    transform: rotate(10deg) scale(1.2);
 }
