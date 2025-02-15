@@ -51,3 +51,36 @@ function prevText() {
 
 // Auto-Change Text Every 2 Seconds
 setInterval(nextText, 2000);
+
+
+
+// Data for images & text (local images)
+const slides = [
+    { img: "static/src/image/profile.png", text: "William Ayrton" },
+    { img: "static/src/image/profile1.png", text: "Amelia Charlotte" },
+    { img: "static/src/image/profile.png", text: "David Michael" },
+    { img: "static/src/image/profile1.png", text: "Olivia Emily" },
+];
+
+let number = 0; // Current slide index
+
+// Function to update image and text
+function updateSlide() {
+    document.getElementById("carousel-image").src = slides[number].img;
+    document.getElementById("carousel-text").innerText = slides[number].text;
+}
+
+// Function for next slide
+function nextSlide() {
+    number = (number + 1) % slides.length; // Loop back after last
+    updateSlide();
+}
+
+// Function for previous slide
+function prevSlide() {
+    number = (number - 1 + slides.length) % slides.length; // Loop back after first
+    updateSlide();
+}
+
+// Auto-slide every 2 seconds
+setInterval(nextSlide, 2000);

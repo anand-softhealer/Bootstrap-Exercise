@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACULIA</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="/static/src/css/owl.carousel.min.css">
@@ -94,7 +94,14 @@
             <div class="col-lg-6 header_img">
               <img src="static/src/image/lab.jpg" class="img-fluid header_content_img mb-4 rounded" alt="lab">
             </div>
-            <span class="fa fa-chevron-left d-flex"><span class="fa fa-chevron-right d-flex"></span></span>
+            <div class="row mt-3">
+              <div class="col-sm-1 col-md-1 col-lg-1">
+                <span class="fa fa-chevron-left d-flex" onclick="prevText()"></span>
+              </div>
+              <div class="col-sm-1 col-md-1 col-lg-1">
+                <span class="fa fa-chevron-right d-flex" onclick="nextText()"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -201,7 +208,7 @@
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
   <!-- tab section -->
   <section class="services p-3" style="background-image: url('static/src/image/bg2.jpg'); border-radius: 0.25rem;">
@@ -406,7 +413,7 @@
   </section>
 
   <!-- COMPONENT SECTION -->
-  <section class="component">
+  <section class="component container-fluid">
     <div class="row component_bg" style="background: url('/static/src/image/bg.jpg') no-repeat; height: 50vh;">
         <div class="row component_content d-block justify-content-center align-item-center">
           <div class="col-sm-12 col-md-12 col-lg-12 my-5 ">
@@ -452,7 +459,7 @@
   </section>
 
   <!-- youtube section -->
-  <section class="video">
+  <section class="video container-fluid">
     <div class="container">
       <div class="row my-5">
         <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
@@ -474,24 +481,34 @@
   </section>
 
   <!-- experience section  -->
-  <section class="experience my-5">
+  <section class="container-fluid experience my-5">
     <div class="row experience_bg p-5">
       <div class="col-lg-6">
         <span class="fa fa-quote-left quote"></span>
         <p class="text-white experience_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         <div class="row">
           <div class="col">
-            <img class="experience_img" src="static/src/image/profile.png" width="30px">
-            <span class="experience_text text-white">William Ayrton</span>
+            <img id="carousel-image" class="experience_img" src="static/src/image/profile.png" width="30px">
+            <span id="carousel-text" class="experience_text text-white">William Ayrton</span>
           </div>
         </div>
       </div>
       <div class="col-lg-6"></div>
+
+      <div class="row mt-3 carousel_btn">
+        <div class="col-sm-1 col-md-1 col-lg-1">
+          <span class="fa fa-chevron-left d-flex text-white" onclick="prevSlide()"></span>
+        </div>
+        <div class="col-sm-1 col-md-1 col-lg-1">
+          <span class="fa fa-chevron-right d-flex text-white" onclick="nextSlide()"></span>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <!-- employee section -->
-  <section class="employee-cart container mb-5">
+  <section class="employee-cart container-fluid mb-5">
     <h1 class="align-item-center justify-content-center d-flex">Aculia Journal</h1>
     <p class="justify-content-center align-item-center d-flex" style="color: #d53509;">Latest News</p>
     <hr class="line d-flex mx-auto justify-content-center" style="width: 15%;">
@@ -541,18 +558,18 @@
   
   <!-- footerr section -->
 
-  <footer class="footer bg rounded" id="contact">
+  <footer class="container-fluid footer bg rounded mb-5" id="contact">
     <div class="container dis">
         <div class="row mt-5">
             <!-- About Section -->
             <div class="col-md-3 footer_text text-white my-auto">
                 <h5>ACULIA</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="social-icons ">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                <div class="social-icons d-flex mx-auto gx-5">
+                    <a href="#" class="icon_1"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="icon_1"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="icon_1"><i class="fa fa-link"></i></a>
+                    <a href="#" class="icon_1"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
 
@@ -598,8 +615,6 @@
         </div>
     </div>
   </footer>
-
-  </div>
 </div>
 
 <script src="/static/src/js/jquery.min.js"></script>

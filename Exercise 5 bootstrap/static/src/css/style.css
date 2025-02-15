@@ -280,6 +280,11 @@
     width: 100%;
     height: 100%;
 }
+
+.carousel_btn{
+    position: relative;
+    z-index: 2;
+}
 .quote{
     color: #d53509;
     font-size: 50px !important;
@@ -353,6 +358,18 @@
 .dis{
     z-index: 1;
     position: relative;
+}
+
+.social-icons{
+    gap: 15px;
+    font-size: 25px;
+}
+
+.icon_1{
+    color: #fff;
+}
+.icon_1:hover{
+    color: #d53509;
 }
 
 @media (min-width:320px) and (max-width: 374px) {
