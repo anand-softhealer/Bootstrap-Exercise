@@ -1,0 +1,133 @@
+.item{
+    background-color: aqua;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bx-pager {
+    text-align: justify;
+    margin-left: 28%;
+    margin-top: -3%;
+}
+
+#bx-pager a {
+margin: 0 3px;
+}
+
+#bx-pager a img {
+padding: 3px;
+border: solid #ccc 1px
+}
+
+#bx-pager a.active img {
+border: solid #5280DD 1px;
+}
+
+#slider1 {
+    padding: 0;
+    margin: 0;
+  }
+
+#slider2 {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-cell{
+    width: 66%;
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-cell::before{
+    display: block;
+    content: "";
+}
+
+.swiper{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.slider_swiper{
+    margin-top: 15px;
+}
+
+.slider_swiper2 {
+    margin-top: 15px !important;
+    width: 500px;  /* Set width */
+    height: 300px; /* Set height */
+    margin: auto;  /* Center the slider */
+}
+
+.slider_swiper2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Scrollbar styling */
+.slider_swiper3 {
+    background: rgba(0, 0, 0, 0.1); /* Light background */
+    height: 6px; /* Scrollbar height */
+}
+
+.slider_swiper3-drag {
+    background: #ff5733; /* Scrollbar color */
+}
+
+
+
+.slider_swiper4 {
+    width: auto;
+    height: 100%;
+    background: #000;
+  }
+
+  .slider_swiper4_slide {
+    font-size: 18px;
+    color: #fdfdfd;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slider_swiper4_slide .title {
+    font-size: 41px;
+    font-weight: 300;
+  }
+
+  .slider_swiper4_slide .subtitle {
+    font-size: 21px;
+  }
+
+  .slider_swiper4_slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
