@@ -1,0 +1,137 @@
+.header_left{
+    position: relative;
+    border-top: 15px solid #0000ff;
+}
+
+.header_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 10%;
+    background-color: black;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_right img{
+    width: 60%;
+}
+.header_left {
+    padding: 30px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.text{
+    font-size: 20px;
+}
+
+table{
+    display: table;
+}
+.table_radius table thead tr .thead_th{
+    border-radius:25px 0 0 0;
+}
+
+.footer{
+    position: relative;
+    border-bottom: 15px solid #0000ff;
+}
+
+.col2{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 40px 0px 40px;
+}
+.col2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 138%;
+    background-color: black;
+    border-top-left-radius: 80px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 375px) {
+    .header_left {
+        padding: 15px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .header_right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 10%;
+        background-color: black;
+        border-bottom-left-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_right img{
+        width: 80%;
+    }
+
+    .col2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 138%;
+        background-color: black;
+        border-top-left-radius: 80px;
+        content-visibility: hidden;
+    }
+    
+}
+
+@media (min-width: 376px) and (max-width:425px){
+    .header_left {
+        padding: 15px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .header_right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 10%;
+        background-color: black;
+        border-bottom-left-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_right img{
+        width: 80%;
+    }
+
+    .col2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 138%;
+        background-color: black;
+        border-top-left-radius: 80px;
+        content-visibility: hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .col2 {
+        justify-content: space-between;
+        text-align: left;
+        padding: 20px 40px;
+    }
+}
